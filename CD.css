@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+.chart-container {
+    width: 80%;
+    margin: auto;
+}
+.calculation-container {
+    margin-top: 30px;
+    text-align: center;
+}
+.calculation-container input {
+    padding: 5px;
+    margin: 5px;
+}
+.boton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.boton:active {
+    color: pink; 
+    text-decoration: underline;
+}
+
+.boton:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Transversal</title>
+    <link rel="stylesheet" type="text/css" href="Participantes.css">
+</head>
+
+<body>
+    <header>
+        <h1>Participantes</h1>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carousel-slide">
+            <div>
+                <img src="Paula.jpeg" alt="Persona 1">
+                <div class="carousel-caption">Paula Guzman Ramirez</div>
+            </div>
+            <div>
+                <img src="Analy.jpg" alt="Persona 2">
+                <div class="carousel-caption">Analy Dayanna Marquez Jimenez</div>
+            </div>
+            <div>
+                <img src="Citlali.png" alt="Citali Villela Martinez">
+                <div class="carousel-caption"></div>
+            </div>
+            <div>
+                <img src="Dulce.jpg" alt="Persona 4">
+                <div class="carousel-caption">Dulce Darianna Marquez Jimenez</div>
+            </div>
+            <div>
+                <img src="Ximena.jpg" alt="Persona 5">
+                <div class="carousel-caption">Ximena Ibarra</div>
+            </div>
+        </div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+
+    <div class="sources">
+        <h2>Fuentes sobre Ecología</h2>
+        <ul>
+            <li><a href="https://www.greenpeace.org">Greenpeace</a></li>
+            <li><a href="https://www.wwf.org">WWF</a></li>
+            <li><a href="https://www.ecowatch.com">EcoWatch</a></li>
+            <li><a href="https://www.nationalgeographic.com/environment">National Geographic</a></li>
+            <li><a href="https://www.treehugger.com">Treehugger</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide div');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const slideWidth = slides[0].clientWidth;
+            document.getElementById('carousel-slide').style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+    </script>
+    <button class="boton"> <a href="ProyectoT.html">Volver</a></button>
+</body>

@@ -1,0 +1,95 @@
+header {
+    text-align: center;
+    background-color: plum;
+    color: white;
+    padding: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(240, 204, 240);
+    background-size: cover;
+}
+
+h1, h2 {
+    text-align: center;
+}
+.carousel-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.carousel-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.sources {
+    margin-top: 30px;
+    text-align: center;
+}
+.sources ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sources li {
+    margin: 5px 0;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.sources li:hover {
+    background-color: #f2f2f2;
+}
+
+.sources a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.sources a:hover {
+    text-decoration: underline;
+}
+
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}

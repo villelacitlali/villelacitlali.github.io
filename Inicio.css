@@ -1,0 +1,159 @@
+/* He añadido comentarios para distinguir los estilos y no sea demasiado confuso. */
+
+
+/* Estilos del cuerpo */
+
+body {
+    font-family: Arial;
+    background-color: #ffdae0;
+    background-size: cover;
+    margin: 0;
+    /* Añadido para eliminar los márgenes del cuerpo */
+}
+
+
+/* Estilos del menú */
+
+.menu,
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Añadido para eliminar los márgenes del menú */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    /* Centrar las opciones del menú */
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+    line-height: 2rem;
+    position: relative;
+    border-radius: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display: block;
+}
+
+.menu a:hover {
+    background: rgba(0, 0, 0, .5);
+    transition: .8s;
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    background-color: #b2486c;
+    color: white;
+    transition: .8s;
+    border-radius: 10px;
+}
+
+.menu li ul {
+    background: #852b49;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+    width: 175px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 10px;
+}
+
+.menu>li:hover>ul {
+    max-height: 1000px;
+    overflow: visible;
+    transition: all .8s;
+}
+
+
+/* Estilos de la cabecera */
+
+.IC {
+    background-color: #ffc0cb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IC img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 15%;
+    transition: .4s;
+}
+
+
+/* Encabezado */
+
+header {
+    background-color: palevioletred;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+
+/* Cuerpo de la página */
+
+.a {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.Materia {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
+
+.Materia img {
+    width: 160px;
+    height: 170px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: .4s;
+}
+
+.M1 {
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.M1:hover {
+    text-decoration: underline;
+    color: palevioletred;
+    transition: .4s;
+}

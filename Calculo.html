@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Transversal</title>
+    <link rel="stylesheet" type="text/css" href="CD.css">
+</head>
+
+<body>
+    <h1>Comparación de Energías Asequibles</h1>
+    
+    <div class="chart-container">
+        <canvas id="energyChart"></canvas>
+    </div>
+
+    <div class="calculation-container">
+        <h2>Cálculos de Funciones Algebraicas</h2>
+        <p>Ingrese un valor para calcular la energía generada por un panel solar (E = P * t)</p>
+        <label for="power">Potencia (P) en kW:</label>
+        <input type="number" id="power" step="0.1">
+        <label for="time">Tiempo (t) en horas:</label>
+        <input type="number" id="time" step="0.1">
+        <button onclick="calcularenergia()">Calcular Energía</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Datos para la gráfica de tipos de energías asequibles
+        const energyData = {
+            labels: ['Solar', 'Eólica', 'Hidráulica', 'Biomasa', 'Geotérmica'],
+            datasets: [{
+                label: 'Costo en $/kWh',
+                data: [0.06, 0.05, 0.04, 0.07, 0.08],
+                backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
+                borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+                borderWidth: 1
+            }]
+        };
+
+        // Configuración de la gráfica
+        const config = {
+            type: 'bar',
+            data: energyData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        // Renderizar la gráfica
+        const ctx = document.getElementById('energyChart').getContext('2d');
+        const energyChart = new Chart(ctx, config);
+
+        // Función para calcular la energía generada
+        function calcularenergia() {
+            const power = parseFloat(document.getElementById('power').value);
+            const time = parseFloat(document.getElementById('time').value);
+            if (!isNaN(power) && !isNaN(time)) {
+                const energy = power * time;
+                document.getElementById('result').textContent = `Energía generada: ${energy} kWh`;
+            } else {
+                document.getElementById('result').textContent = 'Por favor, ingrese valores válidos para la potencia y el tiempo.';
+            }
+        }
+    </script>
+    <button class="boton"> <a href="ProyectoT.html">Volver</a></button>
+</body>
+</html>
