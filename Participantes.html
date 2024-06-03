@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Transversal</title>
     <link rel="stylesheet" type="text/css" href="Participantes.css">
 </head>
@@ -11,7 +12,8 @@
     <header>
         <h1>Participantes</h1>
     </header>
-    <div class="carousel-container">
+
+    <section class="carousel-container">
         <div class="carousel-slide" id="carousel-slide">
             <div>
                 <img src="Paula.jpeg" alt="Persona 1">
@@ -22,8 +24,8 @@
                 <div class="carousel-caption">Analy Dayanna Marquez Jimenez</div>
             </div>
             <div>
-                <img src="Citlali.png" alt="Citali Villela Martinez">
-                <div class="carousel-caption"></div>
+                <img src="Citlali.png" alt="Persona 3">
+                <div class="carousel-caption">Citlali Villela Martinez</div>
             </div>
             <div>
                 <img src="Dulce.jpg" alt="Persona 4">
@@ -36,9 +38,47 @@
         </div>
         <a class="prev" onclick="prevSlide()">&#10094;</a>
         <a class="next" onclick="nextSlide()">&#10095;</a>
-    </div>
+    </section>
 
-    <div class="sources">
+    <section class="team">
+        <div class="team-member">
+            <img src="Paula.jpeg" alt="Paula Guzman Ramirez">
+            <h2>Paula Guzman Ramirez</h2>
+            <p>Edad: 17 años.</p>
+            <p>Intereses: Arte.</p>
+            <p>Habilidades: Dibujar.</p>
+        </div>
+        <div class="team-member">
+            <img src="Analy.jpg" alt="Analy Dayanna Marquez Jimenez">
+            <h2>Analy Dayanna Marquez Jimenez</h2>
+            <p>Edad: 16 años.</p>
+            <p>Intereses: La fotografía.</p>
+            <p>Habilidades: Buena en la materia de cálculo diferencial.</p>
+        </div>
+        <div class="team-member">
+            <img src="Citlali.png" alt="Citlali Villela Martinez">
+            <h2>Citlali Villela Martinez</h2>
+            <p>Edad: 16 años.</p>
+            <p>Intereses: Tocar instrumentos musicales.</p>
+            <p>Habilidades: Natación.</p>
+        </div>
+        <div class="team-member">
+            <img src="Dulce.jpg" alt="Dulce Darianna Marquez Jimenez">
+            <h2>Dulce Darianna Marquez Jimenez</h2>
+            <p>Edad: 16 años.</p>
+            <p>Intereses: Tocar el piano.</p>
+            <p>Habilidades: Hablar inglés.</p>
+        </div>
+        <div class="team-member">
+            <img src="Ximena.jpg" alt="Ximena Ibarra">
+            <h2>Ximena Ibarra</h2>
+            <p>Edad: 17 años.</p>
+            <p>Intereses: La música rock.</p>
+            <p>Habilidades: Dibujar.</p>
+        </div>
+    </section>
+
+    <section class="sources">
         <h2>Fuentes sobre Ecología</h2>
         <ul>
             <li><a href="https://www.greenpeace.org">Greenpeace</a></li>
@@ -47,7 +87,9 @@
             <li><a href="https://www.nationalgeographic.com/environment">National Geographic</a></li>
             <li><a href="https://www.treehugger.com">Treehugger</a></li>
         </ul>
-    </div>
+    </section>
+
+    <button class="boton"> <a href="index.html">Volver</a></button>
 
     <script>
         let slideIndex = 0;
@@ -71,5 +113,6 @@
 
         setInterval(nextSlide, 3000);
     </script>
-    <button class="boton"> <a href="ProyectoT.html">Volver</a></button>
 </body>
+
+</html>

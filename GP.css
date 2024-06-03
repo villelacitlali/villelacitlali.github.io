@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+    background-color: plum;
+    color: white;
+    padding: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    background-color: rgb(240, 204, 240);
+    background-size: cover;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px; /* Aumentar el tamaño para acomodar la imagen y texto en una línea */
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid plum;
+    background-color: rgb(240, 154, 120);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.carousel-slide img {
+    width: 50%; 
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    flex: 1;
+    font-size: 18px; 
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.boton {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background-color: rgb(255, 187, 229);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.boton a {
+    color: white;
+    text-decoration: none;
+}

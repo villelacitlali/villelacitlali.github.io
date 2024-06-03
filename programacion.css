@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 243, 145);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(111, 216, 111);
+    margin: 10px 0;
+}
+
+p, ul, li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 10px 20px;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+section {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.pros-contras {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pros, .contras {
+    width: 45%;
+}
+
+button {
+    background-color: rgb(108, 197, 108);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
